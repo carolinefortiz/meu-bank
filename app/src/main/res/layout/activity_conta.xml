@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContaActivity">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/textViewSaldo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="50dp"
+            android:onClick="saldo"
+            android:text="Clique para exibir o Saldo"
+            android:textAlignment="gravity"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/buttonExtrato"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="exibirExtrato"
+            android:text="Extrato" />
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Movimente sua conta" />
+
+        <Button
+            android:id="@+id/buttonDeposito"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="realizarDeposito"
+            android:text="Depósito" />
+
+
+        <Button
+            android:id="@+id/buttonRetirada"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="realizarRetirada"
+            android:text="Retirada" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Transferencias e Pagamentos" />
+
+        <Button
+            android:id="@+id/buttonPix"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="pix"
+            android:text="Pix" />
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

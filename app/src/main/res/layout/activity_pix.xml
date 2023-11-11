@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PixActivity">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textSize="24sp"
+            android:textAlignment="center"
+            android:textColor="#673AB7"
+            android:textStyle="bold"
+            android:text="Área Pix" />
+
+        <Button
+            android:id="@+id/cadastrarRemoverPix"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="cadRemPix"
+            android:text="Cadastrar/Remover Chaves" />
+
+        <Button
+            android:id="@+id/exibirListaChaves"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="exibirListaChaves"
+            android:text="Lista de Chaves Cadastradas" />
+
+        <Button
+            android:id="@+id/favoritos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="favoritos"
+            android:text="Consultar Favoritos" />
+
+        <EditText
+            android:id="@+id/editTextChave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Chave Pix"
+            android:inputType="text"
+            android:onClick="chavePix" />
+
+        <EditText
+            android:id="@+id/editTextValorPix"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Valor Pix"
+            android:inputType="text"
+            android:onClick="valorPix" />
+
+        <Switch
+            android:id="@+id/switchFavoritos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="favoritos"
+            android:text="Favoritos" />
+
+        <Button
+            android:id="@+id/enviarPix"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="enviarPix"
+            android:text="Enviar Pix" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
